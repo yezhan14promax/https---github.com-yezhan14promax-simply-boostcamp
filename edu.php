@@ -132,7 +132,7 @@ if (isset($_GET['login_mail_clt'])) {
                 <?php
                 if (isset($_GET['id_edu'])) {
                     $id_edu = $_GET['id_edu'];
-                    $sql = "SELECT * FROM cours WHERE id_edu = $id_edu";
+                    $sql = "SELECT * FROM cours as a,relation as b where a.id_prof=b.id_prof and id_edu=$id_edu";
                     $result = mysqli_query($db_handle, $sql);
                     while ($data = mysqli_fetch_assoc($result)) {
                         echo '<a href="cours.php?id_cours=' . $data['id_cours'] . '&id_edu=' . $id_edu . '">';
