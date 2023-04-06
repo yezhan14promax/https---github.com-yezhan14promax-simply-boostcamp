@@ -1,0 +1,1 @@
+http://localhost/#error=unsupported response type&error description=The provided value for the input parameter 'response type' is not allowed for this client. Expected value is 'code'. 'token' is disabled for this app.

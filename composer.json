@@ -1,6 +1,7 @@
 {
+    "name": "14728/test",
     "require": {
         "microsoft/microsoft-graph": "^1.93",
-        "guzzlehttp/guzzle": "^7.5"
+        "vlucas/phpdotenv": "^5.5"
     }
 }
